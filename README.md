@@ -5,11 +5,12 @@
 3. Run the project `node server.js`
 
 <!-- How to use the project -->
-1. Send a POST request to `http://localhost:3000/calculate-tax` with the following JSON body:
+1. Send a POST request to `http://localhost:3000/calculate` with the following JSON body:
 ```json
 {
   "price": 50000,
-  "isVatInclusive": true
+  "isVatInclusive": true,
+  "category": "Properties" // Food, Transport, Properties e.t.c
 }
 ```
 2. The server will respond with the calculated tax:
