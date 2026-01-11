@@ -8,12 +8,13 @@
 1. Send a POST request to `http://localhost:3000/calculate-tax` with the following JSON body:
 ```json
 {
-  "price": 50000
+  "price": 50000,
+  "isVatInclusive": true
 }
 ```
 2. The server will respond with the calculated tax:
 ```json
 message: 'Tax calculation successful!',
-    data: { "payable": 45000, "taxAmount": 5000, "percent": 7.5 },
+    data: { "payable": 50000, "taxAmount": 3488.37, "percent": 7.5 },
     status: true
 ```
